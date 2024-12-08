@@ -1,0 +1,426 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    background-color: #181818;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #212121;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    color: #fdd835;
+    font-size: 2rem;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #fdd835;
+}
+.nav-menu alert-button{
+    margin: 0 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-menu alert-button:hover {
+    color: #fdd835;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: #fdd835;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.team-input {
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #303030;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.team-input:focus {
+    border-color: #fdd835;
+}
+/* Blog Section */
+.blog-section {
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog Post */
+.blog-post {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.blog-post:hover {
+    background-color: #444; /* Change background on hover */
+}
+
+/* Heading Styles */
+.blog-post h2 {
+    font-size: 2rem;
+    color: #fdd835;
+    margin-bottom: 15px;
+}
+
+.blog-post h3 {
+    font-size: 1.4rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* Image Styles */
+.blog-post .post-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+/* Paragraph Style */
+.blog-post p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+/* Featured Photo in Blog Post */
+.post-image {
+    width: 100%; /* Make sure it takes up the full width */
+    max-width: 800px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    display: block; /* Ensure it's treated as a block-level element */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+.featured-image-wrapper {
+    width: 100%;
+    max-width: 1000px; /* You can adjust this as needed */
+    margin: 30px auto; /* Centers the image on the page */
+    padding: 10px;
+    border-radius: 10px; /* Round the edges of the container */
+    background-color: #333; /* Light dark background for contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow around the div */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image is displayed as a block */
+    border-radius: 8px; /* Rounds the image corners */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Hover effect for image */
+.featured-image-wrapper:hover .featured-image {
+    transform: scale(1.05); /* Slight zoom-in effect when hovering */
+}
+
+/* Optional: Add a text overlay or caption if needed */
+.featured-image-wrapper::after {
+    content: "Featured Match!";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fdd835;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Comments Section */
+.comments-section {
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.comments-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #fdd835;
+}
+
+.comment {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.comment-input {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #303030;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.comment-input:focus {
+    border-color: #fdd835;
+}
+
+.comment-button {
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #181818;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #ffc107;
+}
+
+/* Footer styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #212121;
+    color: #f5f5f5;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fdd835;
+}
+
+
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #222; /* Darker background for a professional look */
+    color: #f5f5f5; /* Light text color */
+    border-radius: 15px; /* Rounded corners */
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Soft shadow around the section */
+}
+
+/* Welcome Content (Text) */
+.welcome-content {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fdd835; /* Golden yellow color for title */
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd; /* Slightly lighter text for readability */
+    margin-bottom: 30px;
+}
+
+.team-input {
+    margin-top: 15px;
+    padding: 12px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #303030;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.team-input:focus {
+    border-color: #fdd835; /* Golden yellow when focused */
+}
+
+/* Welcome Image */
+.welcome-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article {
+    display: none; 
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+}
+
+.article h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.article h3 {
+    font-size: 1.4rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+
+.nav-menu a {
+    margin: 0 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #fdd835;
+}
+/* COPA America Section */
+.copa-section {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* COPA Content */
+.copa-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.copa-content h2 {
+    font-size: 2rem;
+    color: #ff6347; /* COPA color */
+    margin-bottom: 15px;
+}
+
+.copa-content h3 {
+    font-size: 1.4rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.copa-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+/* Paragraph Styling */
+.copa-content p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+

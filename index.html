@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SPORTSBLOG</div>
+        <nav class="nav-menu">
+            <a href="#FIFA-blog">FIFA</a>
+            <a href="#COPA-blog">COPA</a>
+            <a href="#LALIGA-blog">LALIGA</a>
+            <button id="alert-button" class = "alert-button"> Click me </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h1 id="welcome-title"></h1>
+                <p id="welcome-description"></p>
+                <input type="text" placeholder="Your favorite team is..." class="team-input">
+                <button type="submit" class="comment-button">Submit</button>
+            </div>
+            <div class="welcome-image">
+                <img src="images/image1.webp" alt="Football Field" class="welcome-img">
+            </div>
+        </section>
+        
+        <script src="script.js"></script> 
+        
+        
+        
+
+        
+
+        <section class="blog-section">
+            <article class="blog-post" id = "FIFA-blog">
+                <h2>FIFA</h2>
+                <h3>Lionel Messi on winning the World Cup: "Being a world champion changed my life"</h3>
+                <img src="images/image2.jpg" alt="Lionel Messi" class="post-image">
+                <p>Lionel Messi spoke about how winning the 2022 World Cup with the Argentina national team changed his life...</p>
+            </article>
+           
+           
+            <article class="blog-post" id = "LALIGA-blog">
+                <h2>LALIGA</h2>
+                <h3>Barcelona stretch LaLiga lead with derby win as Atalanta stun Serie A leaders Napoli</h3>
+                <img src="images/image3.webp" alt="Barcelona Players" class="post-image">
+                <p>Dani Olmo was the star of the show as he netted twice, helping Barcelona to a 3-1 victory over city rivals Espanyol...</p>
+            </article>
+     
+
+    
+           
+            <article class="blog-post"  id = "COPA-blog" >
+                <h2>COPA America</h2>
+                <h3>The Rise of Copa America: A Tale of Triumphs</h3>
+                <img src="images/copa-america.avif" alt="Copa America" class="copa-image">
+                <p>The Copa America has become one of the most prestigious tournaments in South American football. Its legacy continues to inspire players and fans alike, with historic rivalries and memorable moments...</p>
+            </article>
+          
+        </section>
+
+        <aside class="comments-section">
+            <h3>Comments</h3>
+            <div class="comment">
+                <p><strong>Jan 1, 2023 posted by:</strong> Every FIFA match tells a story of passion, strategy, and dreams.</p>
+            </div>
+            <form>
+                <textarea placeholder="Write your comment" class="comment-input"></textarea>
+                <button type="submit" class="comment-button">Submit</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="about-me">
+            <h3>About me</h3>
+            <p>Name: RAJU AL RAJI</p>
+            <p>STUDENT ID: 23229595</p>
+            <p>Tokyo International University</p>
+        </div>
+        <div class="social-links">
+            <h3>Social</h3>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
